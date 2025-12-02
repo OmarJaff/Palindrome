@@ -6,22 +6,22 @@ String.prototype.reverse = function reverse() {
 }
 
 function Phrase(content) {
-     this.content = content;
 
-     this.processor = function processor(string) {
-        return string.toLowerCase()
-     }
-
+     this.content = content;  
+ 
      this.processedContent = function processedContent() {
-      return this.processor(content);
+      return this.letters().toLowerCase();
      }
 
-     //this is how you define a method:
-     this.palindrome = function palindrome() {
-    
+     this.letters = function letters() {
+      return this.content.match(/[a-zA-Z]+/g).join(""); 
+     }
+
+      this.palindrome = function palindrome() {
       return this.processedContent() === this.processedContent().reverse();
      }
 
+    
 }
 
  
