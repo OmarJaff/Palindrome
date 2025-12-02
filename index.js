@@ -14,7 +14,7 @@ function Phrase(content) {
      }
 
      this.letters = function letters() {
-      return this.content.match(/[a-zA-Z]+/g).join(""); 
+      return (this.content.match(/[a-z]/gi) || []).join(""); 
      }
 
       this.palindrome = function palindrome() {
