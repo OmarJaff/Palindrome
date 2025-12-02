@@ -1,4 +1,6 @@
 // Adds `reverse` methode to String object
+export default Phrase;
+
 String.prototype.reverse = function reverse() {
   return Array.from(this).reverse().join("");
 }
