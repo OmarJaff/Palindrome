@@ -9,13 +9,11 @@ function palindromeTester() {
   let phrase = new Phrase(string);
 
   if (phrase.palindrome()) {
-    alert(`"${phrase.content}" is a palindrome!`);
+     document.querySelector("#palindromeResult").innerHTML = `<strong>${phrase.content}</strong> is a palindrome!"`;
   } else {
-    alert(`"${phrase.content}" is not a palindrome.`)
+         document.querySelector("#palindromeResult").innerHTML = `<strong>${phrase.content}</strong> is not a palindrome!`;
   }
 }
-
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
