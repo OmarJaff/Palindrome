@@ -1,0 +1,6 @@
+#!/usr/local/bin/node
+
+let urllib = require("urllib");
+let url = process.argv[2];
+
+console.log(url);
